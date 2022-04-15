@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.cont-login a {
+    text-decoration: none;
+}
+
+.cont-login {
+    width: 500px;
+    padding: 29px 30px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cont-login .img-logo {
+    width: 122px;
+    margin-bottom: 28px;
+}
+
+.cont-login .txt-login {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    color: #000000;
+}
+
+.cont-login .link-login {
+    display: block;
+    background: #2F80ED;
+    padding: 17px 0 15px 0;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}

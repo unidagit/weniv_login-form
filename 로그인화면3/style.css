@@ -1,0 +1,246 @@
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.cont-login {
+    position: relative;
+    width: 520px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.cont-login .cont-head {
+    text-align: center;
+    padding: 18px 24px 17px ;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.cont-head .txt-login-join {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cont-head .img-x {
+    float: right;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.cont-login .cont-main {
+    padding: 26px 24px 25px;
+}
+
+.cont-main .txt-head {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.cont-main .input-id {
+    width: 472px;
+    border: 1px solid #C4C4C4;
+    padding: 14px 0 14px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cont-main .input-pw {
+    width: 472px;
+    border: 1px solid #C4C4C4;
+    padding: 14px 0 14px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    border-radius: 5px;
+}
+
+/*로그인상태유지 체크박스*/
+.cont-main input[id="check"] {
+    display: none;
+}
+
+.cont-main input[id="check"] + label em {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: -3px 5px 0 0;
+    background: url(img/check-box.png)0 0 no-repeat;
+    vertical-align: middle;
+}
+
+.cont-main input[id="check"]:checked + label em {
+    background: url(img/check-boxblue.png);
+    transition: all ease 0.3s 0s;
+}
+
+.cont-main .check-text {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    margin-top: 16px;
+}
+
+.cont-main .link-login {
+    display: block;
+    width: 472px;
+    height: 50px;
+    background-color: #2F80ED;
+    border-radius: 5px;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    
+}
+
+.cont-main .link-join-find {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cont-main .link-join-find .link-join, .link-find {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.cont-main .link-join-find .link-join::before {
+    content: '';
+    float: right;
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #767676;
+    margin: 2px 9px 0 12px;
+}
+
+.cont-main .txt-or {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.cont-main .txt-or::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.cont-main .txt-or::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.cont-main [class^="btn"] {
+    width: 472px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cont-main [class^="login"] {
+    font-size: 16px;
+    line-height: 50px;
+    color: #767676;
+}
+
+.cont-main .btn-google {
+    border: 1px solid #767676;
+}
+
+.cont-main .btn-facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.cont-main .btn-naver {
+    border: 1px solid #00BF18;
+}
+
+.cont-main .btn-kakao {
+    border: 1px solid #F2C94C;
+    margin-bottom: 0;
+}
+
+ul a::before {
+    content: "";
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 10px 0 10px 11px;
+}
+
+ul .btn-google .login-google::before {
+    background: url(img/sprite.png) -58px -58px;
+    margin-top: 13px;
+}
+
+ul .btn-facebook .login-facebook::before {
+    background: url(img/sprite.png) -10px -10px;
+}
+
+ul .btn-naver .login-naver::before {
+    background: url(img/sprite.png) -58px -10px;
+}
+
+ul .btn-kakao .login-kakao::before {
+    background: url(img/sprite.png) -10px -58px;
+}
